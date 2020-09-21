@@ -20,18 +20,24 @@ const signIn = function (data) {
   })
 }
 
-const signOut = function (data) {
+const signOut = function () {
   return $.ajax({
     url: config.apiUrl + '/sign-out',
-    method: 'POST',
-    data
+    method: 'DELETE',
+    headers: {
+      Authorization: 'Token token=' + store.user.token
+    }
   })
 }
 
 const changePassword = function (data) {
+  console.log('data is ', data)
   return $.ajax({
     url: config.apiUrl + '/change-password',
-    method: 'POST',
+    method: 'PATCH',
+    headers: {
+      Authorization: 'Token token=' + store.user.token
+    },
     data
   })
 }
