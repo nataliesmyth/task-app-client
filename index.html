@@ -48,6 +48,40 @@
           <input type="submit" value="Change Password">
         </fieldset>
       </form>
+
+      <h1>Task CRUD</h1>
+      <h2>Get All Tasks</h2>
+      <form class='tasks' id='tasks-search'>
+        <div class="form-group">
+        </div>
+        <button type="submit" class="task task-default">Get All Tasks</button>
+      </form>
+      <br />
+      <h2>Get One Task</h2>
+      <form class='tasks' id='task-search'>
+        <div class="form-group">
+          <input type="text" name="task[id]" id="task-id" placeholder="Task ID Here">
+        </div>
+        <button type="submit" class="task task-default">Get Task</button>
+      </form>
+
+      <h2>Delete One Task</h2>
+      <form class='tasks' id='task-delete'>
+        <div class="form-group">
+          <input type="text" name="task[id]" id="task-id-delete" placeholder="Task ID Here">
+        </div>
+        <button type="submit" class="task task-default">Delete Task</button>
+      </form>
+
+      <h2>Update One Task</h2>
+      <form class='tasks' id='task-update'>
+        <div class="form-group">
+          <input type="text" name="task[id]" id="task-id-update" placeholder="Task ID Here">
+          <input type="text" name="task[title]" text="task-title-update" placeholder="Task Title Here">
+          <input type="text" name="task[text]" text="task-text-update" placeholder="Task Text Here">
+        </div>
+        <button type="submit" class="task task-default">Update Task</button>
+      </form>
       
     </body>
 </html>
