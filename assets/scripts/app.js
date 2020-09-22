@@ -1,6 +1,7 @@
 'use strict'
 
 const authEvents = require('./auth/events')
+const tasksEvents = require('./tasks/events.js')
 
 // use require with a reference to bundle the file and use it in this file
 // const example = require('./example')
@@ -9,15 +10,6 @@ const authEvents = require('./auth/events')
 // require('./example')
 
 $(() => {
-  $('#sign-out').hide()
-  $('#change-password').hide()
-  $('#create-task').hide()
-  $('#view-tasks').hide()
-  $('#update-task').hide()
-  $('#delete-task').hide()
-  // User Auth
-  $('#sign-up').on('submit', authEvents.onSignUp)
-  $('#sign-in').on('submit', authEvents.onSignIn)
-  $('#sign-out').on('submit', authEvents.onSignOut)
-  $('#change-password').on('submit', authEvents.onChangePassword)
+  authEvents.addHandlers()
+  tasksEvents.addHandlers()
 })

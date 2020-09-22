@@ -10,8 +10,7 @@ curl "${API}${URL_PATH}" \
   --header "Authorization: Bearer ${TOKEN}" \
   --data '{
     "task": {
-      "text": "'"${TEXT}"'",
-      "title": "'"${TITLE}"'"
+      "text": "'"${TEXT}"'"
     }
   }'
 

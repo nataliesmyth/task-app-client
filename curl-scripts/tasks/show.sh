@@ -9,3 +9,7 @@ curl "${API}${URL_PATH}/${ID}" \
   --header "Authorization: Bearer ${TOKEN}"
 
 echo
+
+# ID="5f697308d7bb3889de756ec3"
+
+# TOKEN="d19c181d6ef0c58cc18b419ab9befe2d"

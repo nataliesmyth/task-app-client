@@ -49,39 +49,46 @@
         </fieldset>
       </form>
 
-      <h1>Task CRUD</h1>
-      <h2>Get All Tasks</h2>
-      <form class='tasks' id='tasks-search'>
-        <div class="form-group">
-        </div>
-        <button type="submit" class="task task-default">Get All Tasks</button>
+      <form id="task-create" class="border">
+        <fieldset>
+          <legend>Create One Task</legend>
+          <input type="text" name="task[text]" placeholder="Enter Task">
+          <input type="submit" value="Create Task">
+        </fieldset>
       </form>
-      <br />
-      <h2>Get One Task</h2>
-      <form class='tasks' id='task-search'>
-        <div class="form-group">
-          <input type="text" name="task[id]" id="task-id" placeholder="Task ID Here">
-        </div>
-        <button type="submit" class="task task-default">Get Task</button>
+    
+      <form id="task-index" class="border">
+        <fieldset>
+          <legend>Get All Tasks</legend>
+          <input type="submit" value="Get All Tasks">
+        </fieldset>
       </form>
-
-      <h2>Delete One Task</h2>
-      <form class='tasks' id='task-delete'>
-        <div class="form-group">
-          <input type="text" name="task[id]" id="task-id-delete" placeholder="Task ID Here">
-        </div>
-        <button type="submit" class="task task-default">Delete Task</button>
+    
+      <form id="task-show" class="border">
+        <fieldset>
+          <legend>Get One Task</legend>
+          <input type="text" name="task[id]" placeholder="Enter Task ID">
+          <input type="submit">
+        </fieldset>
       </form>
-
-      <h2>Update One Task</h2>
-      <form class='tasks' id='task-update'>
-        <div class="form-group">
-          <input type="text" name="task[id]" id="task-id-update" placeholder="Task ID Here">
-          <input type="text" name="task[title]" text="task-title-update" placeholder="Task Title Here">
-          <input type="text" name="task[text]" text="task-text-update" placeholder="Task Text Here">
-        </div>
-        <button type="submit" class="task task-default">Update Task</button>
+    
+      <form id="task-delete" class="border">
+        <fieldset>
+          <legend>Delete One Task</legend>
+          <input type="text" name="task[id]" placeholder="Enter Task ID">
+          <input type="submit" value="Delete Task">
+        </fieldset>
       </form>
-      
+    
+      <form id="task-update" class="border">
+        <fieldset>
+          <legend>Update One Task</legend>
+          <input type="text" name="task[id]" placeholder="Enter Task ID">
+          <input type="text" name="task[title]" placeholder="Enter Task Text">
+          <input type="text" name="task[text]" placeholder="Enter Task text">
+          <input type="submit" value="Update Task">
+        </fieldset>
+      </form>
     </body>
-</html>
+    
+    </html>
