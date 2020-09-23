@@ -16,6 +16,7 @@ const create = function (data) {
 }
 
 const index = function () {
+  console.log(store.user)
   return $.ajax({
     url: config.apiUrl + '/tasks',
     method: 'GET',

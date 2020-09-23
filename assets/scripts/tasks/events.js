@@ -1,6 +1,6 @@
 'use strict'
 
-const getFormFields = require(`../../../lib/get-form-fields`)
+const getFormFields = require('../../../lib/get-form-fields')
 const api = require('./api')
 const ui = require('./ui')
 
@@ -18,9 +18,9 @@ const onIndexTasks = function (event) {
   event.preventDefault()
   console.log('onIndexTasks ran!')
 
-  api.index()
+  console.log(api.index()
     .then(ui.onIndexSuccess)
-    .catch(ui.onIndexFailure)
+    .catch(ui.onIndexFailure))
 }
 
 const onShowTask = function (event) {

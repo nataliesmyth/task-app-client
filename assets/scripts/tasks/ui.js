@@ -1,5 +1,6 @@
 'use strict'
 
+
 const onCreateSuccess = function (data) {
   $('#message').text('Task successfully created')
   $('#message').removeClass()
@@ -18,6 +19,7 @@ const onIndexSuccess = function (data) {
   $('#message').text('All Tasks successfully received')
   $('#message').removeClass()
   $('#message').addClass('success')
+  $('#index-tasks')
   console.log('onIndexSuccess ran. Data is :', data.tasks)
 }
 
@@ -70,6 +72,35 @@ const onUpdateFailure = function (error) {
   console.error('onUpdateFailure ran. Error is :', error)
 }
 
+// const taskArray = function ()
+
+// const taskList = function (array) {
+//   for (let i = 0; i < array.length; i++) {
+//     const taskArray = array[i].tasks
+//     $('#show-collections').append(`<div id="${array[i]._id}">${array[i].title}</div>`)
+//     $('div').append(`<h6>${array[i].description}</h5>`)
+//     addTask(taslArray)
+//   }
+// }
+
+// // taskList
+// const taskList = function (collections) {
+//   // loop through tasks w/ forEach loop
+//   tasks.forEach((tasks) => {
+//       console.log('To Do: ', collection)
+//       // append elements to show collection item
+//       $('#show-collections').append(`
+//     <div id="${collection._id}">
+//     <p>${collection.text}</p>
+//     </div>
+//     `)
+//       // loop through each task
+//       collection.tasks.forEach(function (task) {
+//         console.log('task is ', task)
+//       })
+//     })
+// }
+ 
 module.exports = {
   onCreateSuccess,
   onCreateFailure,

@@ -22,6 +22,7 @@ const signInSuccess = function (data) {
   $('#message').addClass('success')
   console.log('signInSuccess ran. Data is :', data)
   store.user = data.user
+  console.log(store.user)
 }
 
 const signInFailure = function (error) {
