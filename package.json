@@ -10,7 +10,9 @@
     "babel-polyfill": "^6.26.0",
     "bootstrap": "^4.1.2",
     "jquery": "^3.3.1",
-    "popper.js": "^1.14.3"
+    "mongoose": "^5.10.6",
+    "popper.js": "^1.14.3",
+    "serve": "^11.3.2"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
