@@ -18,9 +18,9 @@ const onIndexTasks = function (event) {
   event.preventDefault()
   console.log('onIndexTasks ran!')
 
-  console.log(api.index()
+  api.index()
     .then(ui.onIndexSuccess)
-    .catch(ui.onIndexFailure))
+    .catch(ui.onIndexFailure)
 }
 
 const onShowTask = function (event) {

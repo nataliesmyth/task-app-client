@@ -19,8 +19,17 @@ const onIndexSuccess = function (data) {
   $('#message').text('All Tasks successfully received')
   $('#message').removeClass()
   $('#message').addClass('success')
-  $('#index-tasks')
   console.log('onIndexSuccess ran. Data is :', data.tasks)
+// loop through tasks w/ forEach loop
+data.tasks.forEach((task) => {
+  console.log('To Do: ', task)
+  // append elements to show task item
+  $('#task-list').append(`
+<div id="${task._id}">
+<p>${task.text}</p>
+</div>
+`)
+  })
 }
 
 const onIndexFailure = function (error) {
@@ -72,35 +81,6 @@ const onUpdateFailure = function (error) {
   console.error('onUpdateFailure ran. Error is :', error)
 }
 
-// const taskArray = function ()
-
-// const taskList = function (array) {
-//   for (let i = 0; i < array.length; i++) {
-//     const taskArray = array[i].tasks
-//     $('#show-collections').append(`<div id="${array[i]._id}">${array[i].title}</div>`)
-//     $('div').append(`<h6>${array[i].description}</h5>`)
-//     addTask(taslArray)
-//   }
-// }
-
-// // taskList
-// const taskList = function (collections) {
-//   // loop through tasks w/ forEach loop
-//   tasks.forEach((tasks) => {
-//       console.log('To Do: ', collection)
-//       // append elements to show collection item
-//       $('#show-collections').append(`
-//     <div id="${collection._id}">
-//     <p>${collection.text}</p>
-//     </div>
-//     `)
-//       // loop through each task
-//       collection.tasks.forEach(function (task) {
-//         console.log('task is ', task)
-//       })
-//     })
-// }
- 
 module.exports = {
   onCreateSuccess,
   onCreateFailure,
