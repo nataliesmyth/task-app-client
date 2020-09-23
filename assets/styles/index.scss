@@ -1,1 +1,81 @@
 @import '~bootstrap/scss/bootstrap';
+:root {
+    --blue: rgb(5, 102, 141);
+    --white: rgb(248, 248, 255);
+    --background: rgb(255, 225, 129);
+    --heading: rgb(146, 121, 99);
+    --text: rgb(105, 105, 105);
+}
+
+$timing-function: ease-in-out;
+$duration: 1s;
+$delayRatio: 0.075s;
+$bounceLimitKeyframe: 30%;
+$bounceLimit: 50%;
+
+h1 {
+  font-size: 48px;
+  color: #927963;
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  margin-bottom: .5rem;
+  line-height: 1em;
+}
+
+body {
+    margin: 2em auto;
+    font-size: 16px;
+    text-align: center;
+    font-family: sans-serif;
+    background-color: var(--background);
+    color: var(--text);
+}
+
+button {
+    background-color: var(--green);
+    border-radius: 5px;
+    border: .75em solid var(--yellow);
+    padding: 1em;
+    /* font-size: 1em; */
+    font-weight: 700;
+}
+
+// safely set elements inside to absolute
+fieldset {
+    position: relative;
+}
+
+legend {
+    float: left;
+}
+
+legend span {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+// input[type=text] {
+//     width: 50%;
+//     padding: 12px 20px;
+//     margin: 8px 0;
+//     // box-sizing: border-box;
+//   }
+
+input[type=submit] {
+    font-weight: 700;
+}
+
+.sign-out {
+    position: relative;
+    left: 50em;
+}
+
+.change-password {
+    position: relative;
+    // left: 20em;
+    bottom: 10em;
+    font-size: .75em;
+    text-align: right;
+}
