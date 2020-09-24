@@ -41,20 +41,24 @@ button {
     font-weight: 700;
 }
 
+// .sign-in-form {
+    
+// }
+
 // safely set elements inside to absolute
-fieldset {
-    position: relative;
-}
+// fieldset {
+//     position: relative;
+// }
 
-legend {
-    float: left;
-}
+// legend {
+//     float: left;
+// }
 
-legend span {
-    position: absolute;
-    top: 0;
-    left: 0;
-}
+// legend span {
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+// }
 
 // input[type=text] {
 //     width: 50%;
@@ -63,19 +67,19 @@ legend span {
 //     // box-sizing: border-box;
 //   }
 
-input[type=submit] {
-    font-weight: 700;
-}
+// input[type=submit] {
+//     font-weight: 700;
+// }
 
-.sign-out {
-    position: relative;
-    left: 50em;
-}
+// .sign-out {
+//     position: relative;
+//     left: 50em;
+// }
 
-.change-password {
-    position: relative;
-    // left: 20em;
-    bottom: 10em;
-    font-size: .75em;
-    text-align: right;
-}
+// .change-password {
+//     position: relative;
+//     // left: 20em;
+//     bottom: 10em;
+//     font-size: .75em;
+//     text-align: right;
+// }
