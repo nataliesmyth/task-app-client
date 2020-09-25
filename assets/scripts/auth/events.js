@@ -49,7 +49,13 @@ const addHandlers = () => {
   $('#sign-in').on('submit', onSignIn)
   $('#sign-out').on('submit', onSignOut)
   $('#change-password').on('submit', onChangePassword)
-  $
+  $('#task-create').hide()
+  $('#task-index').hide()
+  $('#task-delete').hide()
+  $('#task-update').hide()
+  $('#task-show').hide()
+  $('#sign-out').hide()
+  $('#change-password').hide()
 }
 
 module.exports = {
