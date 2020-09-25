@@ -26,7 +26,7 @@ data.tasks.forEach((task) => {
   // append elements to show task item
   $('#task-list').append(`
 <div id="${task._id}">
-<p id="git${task.text}">
+<p id="${task.text}">
 </div>
 `)
   })
