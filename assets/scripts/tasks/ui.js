@@ -5,6 +5,7 @@ const onCreateSuccess = function (data) {
   $('#message').text('Task successfully created')
   $('#message').removeClass()
   $('#message').addClass('success')
+  $('#task-create').trigger('reset')
   console.log('onCreateSuccess ran. Data is :', data)
 }
 
