@@ -17,12 +17,10 @@ const onCreateFailure = function (error) {
 }
 
 const onIndexSuccess = function (data) {
-  // $('#message').text('All Tasks successfully received')
-  // $('#message').removeClass()
-  // $('#message').addClass('success')
   console.log('onIndexSuccess ran. Data is :', data.tasks)
 // loop through tasks w/ forEach loop
 data.tasks.forEach((task) => {
+  $('#task-list').empty()
   console.log('To Do: ', task)
   // append elements to show task item
   $('#task-list').append(`
