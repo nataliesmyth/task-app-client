@@ -4,7 +4,7 @@ const config = require('../config')
 const store = require('../store')
 
 const create = function (data) {
-  console.log('data: ', data)
+  // console.log('data: ', data)
   return $.ajax({
     url: config.apiUrl + '/tasks',
     method: 'POST',
@@ -16,7 +16,7 @@ const create = function (data) {
 }
 
 const index = function () {
-  console.log(store.user)
+  // console.log(store.user)
   return $.ajax({
     url: config.apiUrl + '/tasks',
     method: 'GET',

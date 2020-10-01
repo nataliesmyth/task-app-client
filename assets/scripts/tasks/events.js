@@ -6,7 +6,7 @@ const ui = require('./ui')
 
 const onCreateTask = function (event) {
   event.preventDefault()
-  console.log('onCreateTask ran!')
+  // console.log('onCreateTask ran!')
 
   const data = getFormFields(event.target)
   api.create(data)
@@ -16,7 +16,7 @@ const onCreateTask = function (event) {
 
 const onIndexTasks = function (event) {
   event.preventDefault()
-  console.log('onIndexTasks ran!')
+  // console.log('onIndexTasks ran!')
 
   api.index()
     .then(ui.onIndexSuccess)
@@ -25,7 +25,7 @@ const onIndexTasks = function (event) {
 
 const onShowTask = function (event) {
   event.preventDefault()
-  console.log('onShowTask ran!')
+  // console.log('onShowTask ran!')
 
   const data = getFormFields(event.target)
   const task = data.task
@@ -37,13 +37,13 @@ const onShowTask = function (event) {
   } else {
     $('#message').html('<p>Please provide a task id!</p>')
     $('#message').css('background-color', 'red')
-    console.log('Please enter a task id!')
+    // console.log('Please enter a task id!')
   }
 }
 
 const onDeleteTask = function (event) {
   event.preventDefault()
-  console.log('onDeleteTask ran!')
+  // console.log('onDeleteTask ran!')
 
   const data = getFormFields(event.target)
   const task = data.task
@@ -55,13 +55,13 @@ const onDeleteTask = function (event) {
   } else {
     $('#message').html('<p>Please provide a task id!</p>')
     $('#message').css('background-color', 'red')
-    console.log('Please provide a task id!')
+    // console.log('Please provide a task id!')
   }
 }
 
 const onUpdateTask = function (event) {
   event.preventDefault()
-  console.log('onUpdateTask ran!')
+  // console.log('onUpdateTask ran!')
 
   const data = getFormFields(event.target)
   const task = data.task
@@ -69,7 +69,7 @@ const onUpdateTask = function (event) {
   if (task.text === '') {
     $('#message').html('<p>Text is required</p>')
     $('#message').css('background-color', 'red')
-    console.log('Text is required!')
+    // console.log('Text is required!')
     return false
   }
   if (task.id.length !== 0) {
@@ -79,7 +79,7 @@ const onUpdateTask = function (event) {
   } else {
     $('#message').html('<p>Please provide an task id!</p>')
     $('#message').css('background-color', 'red')
-    console.log('Please provide a task id!')
+    // console.log('Please provide a task id!')
   }
 }
 
