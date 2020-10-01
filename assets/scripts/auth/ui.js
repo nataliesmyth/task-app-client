@@ -40,6 +40,7 @@ const signInFailure = function (error) {
   $('#message').text('Error on sign in')
   $('#message').removeClass()
   $('#message').addClass('failure')
+  $('#sign-in').trigger('reset')
   // console.error('signInFailure ran. Error is :', error)
 }
 
