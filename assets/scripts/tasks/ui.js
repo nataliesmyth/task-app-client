@@ -36,6 +36,7 @@ const onIndexFailure = function (error) {
   $('#message').text('Error on getting tasks')
   $('#message').removeClass()
   $('#message').addClass('failure')
+  $('#task-index').trigger('reset')
   // console.error('onIndexFailure ran. Error is :', error)
 }
 
@@ -43,6 +44,7 @@ const onShowSuccess = function (data) {
   $('#message').text('One Task successfully received')
   $('#message').removeClass()
   $('#message').addClass('success')
+  $('#task-show').trigger('reset')
   // console.log('onCreateSuccess ran. Data is :', data)
 }
 
@@ -50,6 +52,7 @@ const onShowFailure = function (error) {
   $('#message').text('Error on getting task')
   $('#message').removeClass()
   $('#message').addClass('failure')
+  $('#task-show').trigger('reset')
   // console.error('onShowFailure ran. Error is :', error)
 }
 
@@ -57,6 +60,7 @@ const onDestroySuccess = function () {
   $('#message').text('Task successfully deleted')
   $('#message').removeClass()
   $('#message').addClass('success')
+  $('#task-delete').trigger('reset')
   // console.log('Task successfully deleted')
 }
 
@@ -64,6 +68,7 @@ const onDestroyFailure = function (error) {
   $('#message').text('Error on deleting task')
   $('#message').removeClass()
   $('#message').addClass('failure')
+  $('#task-delete').trigger('reset')
   console.error('onDestroyFailure ran. Error is :', error)
 }
 
@@ -71,14 +76,16 @@ const onUpdateSuccess = function () {
   $('#message').text('Task successfully updated')
   $('#message').removeClass()
   $('#message').addClass('success')
-  console.log('Task successfully updated')
+  $('#task-update').trigger('reset')
+  // console.log('Task successfully updated')
 }
 
 const onUpdateFailure = function (error) {
   $('#message').text('Error on updating task')
   $('#message').removeClass()
   $('#message').addClass('failure')
-  console.error('onUpdateFailure ran. Error is :', error)
+  $('#task-update').trigger('reset')
+  // console.error('onUpdateFailure ran. Error is :', error)
 }
 
 module.exports = {
