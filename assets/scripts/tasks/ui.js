@@ -6,24 +6,18 @@ const onCreateSuccess = function (data) {
   $('#message').removeClass()
   $('#message').addClass('success')
   $('#task-create').trigger('reset')
-  // console.log('onCreateSuccess ran. Data is :', data)
 }
 
 const onCreateFailure = function (error) {
   $('#message').text('Error on creating task')
   $('#message').removeClass()
   $('#message').addClass('failure')
-  // console.error('onCreateFailure ran. Error is :', error)
 }
 
 const onIndexSuccess = function (data) {
-  // console.log('onIndexSuccess ran. Data is :', data.tasks)
-// loop through tasks w/ forEach loop
 $('#task-list').empty()
 data.tasks.forEach((task) => {
   
-  // console.log('To Do: ', task)
-  // append elements to show task item
   $('#task-list').append(`
     <p>task: ${task.text}</p>
     <p class="task-id">ID: ${task._id}</p>
@@ -37,7 +31,6 @@ const onIndexFailure = function (error) {
   $('#message').removeClass()
   $('#message').addClass('failure')
   $('#task-index').trigger('reset')
-  // console.error('onIndexFailure ran. Error is :', error)
 }
 
 const onShowSuccess = function (data) {
@@ -45,7 +38,6 @@ const onShowSuccess = function (data) {
   $('#message').removeClass()
   $('#message').addClass('success')
   $('#task-show').trigger('reset')
-  // console.log('onCreateSuccess ran. Data is :', data)
 }
 
 const onShowFailure = function (error) {
@@ -53,7 +45,6 @@ const onShowFailure = function (error) {
   $('#message').removeClass()
   $('#message').addClass('failure')
   $('#task-show').trigger('reset')
-  // console.error('onShowFailure ran. Error is :', error)
 }
 
 const onDestroySuccess = function () {
@@ -61,7 +52,6 @@ const onDestroySuccess = function () {
   $('#message').removeClass()
   $('#message').addClass('success')
   $('#task-delete').trigger('reset')
-  // console.log('Task successfully deleted')
 }
 
 const onDestroyFailure = function (error) {
@@ -69,7 +59,6 @@ const onDestroyFailure = function (error) {
   $('#message').removeClass()
   $('#message').addClass('failure')
   $('#task-delete').trigger('reset')
-  // console.error('onDestroyFailure ran. Error is :', error)
 }
 
 const onUpdateSuccess = function () {
@@ -77,7 +66,6 @@ const onUpdateSuccess = function () {
   $('#message').removeClass()
   $('#message').addClass('success')
   $('#task-update').trigger('reset')
-  // console.log('Task successfully updated')
 }
 
 const onUpdateFailure = function (error) {
@@ -85,7 +73,6 @@ const onUpdateFailure = function (error) {
   $('#message').removeClass()
   $('#message').addClass('failure')
   $('#task-update').trigger('reset')
-  // console.error('onUpdateFailure ran. Error is :', error)
 }
 
 module.exports = {

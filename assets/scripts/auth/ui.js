@@ -7,7 +7,6 @@ const signUpSuccess = function (data) {
   $('#message').removeClass()
   $('#message').addClass('success')
   $('#sign-up').trigger('reset')
-  // console.log('signUpSuccess ran. Data is :', data)
 }
 
 const signUpFailure = function (error) {
@@ -15,7 +14,6 @@ const signUpFailure = function (error) {
   $('#message').removeClass()
   $('#message').addClass('failure')
   $('#sign-up').trigger('reset')
-  // console.error('signUpFailure ran. Error is :', error)
 }
 
 const signInSuccess = function (data) {
@@ -31,9 +29,7 @@ const signInSuccess = function (data) {
   $('#task-delete').show()
   $('#task-update').show()
   $('#task-show').show()
-  // console.log('signInSuccess ran. Data is :', data)
   store.user = data.user
-  // console.log(store.user)
 }
 
 const signInFailure = function (error) {
@@ -41,7 +37,6 @@ const signInFailure = function (error) {
   $('#message').removeClass()
   $('#message').addClass('failure')
   $('#sign-in').trigger('reset')
-  // console.error('signInFailure ran. Error is :', error)
 }
 
 const signOutSuccess = function () {
@@ -58,7 +53,6 @@ const signOutSuccess = function () {
   $('#task-delete').hide()
   $('#task-update').hide()
   $('#task-show').hide()
-  // console.log('signOutSuccess ran and nothing was returned!')
   store.user = null
 }
 
@@ -66,7 +60,6 @@ const signOutFailure = function (error) {
   $('#message').text('Error on sign out')
   $('#message').removeClass()
   $('#message').addClass('failure')
-  // console.error('signOutFailure ran. Error is :', error)
 }
 
 const changePasswordSuccess = function () {
@@ -74,7 +67,6 @@ const changePasswordSuccess = function () {
   $('#message').removeClass()
   $('#message').addClass('success')
   $('form').trigger('reset')
-  // console.log('changePasswordSuccess ran and nothing was returned!')
 }
 
 const changePasswordFailure = function (error) {
@@ -82,7 +74,6 @@ const changePasswordFailure = function (error) {
   $('#message').removeClass()
   $('#message').addClass('failure')
   $('form').trigger('reset')
-  // console.error('changePasswordFailure ran. Error is :', error)
 }
 
 module.exports = {
