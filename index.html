@@ -12,6 +12,18 @@
       <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
     </head>
     <body>
+      <form class="sign-out-form" id="sign-out">
+        <!-- <legend>Sign Out</legend> -->
+        <input type="submit" value="Sign out">
+      </form>
+  
+      <form class="change-password-form" id="change-password">
+          <!-- <h3>Change Password</h3> -->
+          <input type="password" name="passwords[old]" placeholder="Old Password">
+          <input type="password" name="passwords[new]" placeholder="New Password">
+          <input type="submit" value="Change Password">
+      </form>
+
       <h1>Task App</h1>
       <p id="message"></p>
 
@@ -28,18 +40,6 @@
           <input type="text" name="credentials[email]" placeholder="Email">
           <input type="password" name="credentials[password]" placeholder="Password">
           <input type="submit" value="Sign in">
-      </form>
-    
-      <form id="sign-out">
-          <legend>Sign Out</legend>
-          <input type="submit" value="Sign out">
-      </form>
-    
-      <form id="change-password">
-          <legend>Change Password</legend>
-          <input type="password" name="passwords[old]" placeholder="Old Password">
-          <input type="password" name="passwords[new]" placeholder="New Password">
-          <input type="submit" value="Change Password">
       </form>
 
       <form id="task-create" class="border">

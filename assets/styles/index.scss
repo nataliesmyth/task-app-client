@@ -1,6 +1,5 @@
 @import '~bootstrap/scss/bootstrap';
 :root {
-    --blue: rgb(5, 102, 141);
     --white: rgb(248, 248, 255);
     --background: rgb(255, 225, 129);
     --heading: rgb(146, 121, 99);
@@ -17,10 +16,6 @@ h1 {
   font-size: 48px;
   color: #927963;
   position: relative;
-  display: inline-block;
-  margin: 0;
-  margin-bottom: .5rem;
-  line-height: 1em;
 }
 
 body {
@@ -32,54 +27,14 @@ body {
     color: var(--text);
 }
 
-button {
-    background-color: var(--green);
-    border-radius: 5px;
-    border: .75em solid var(--yellow);
-    padding: 1em;
-    /* font-size: 1em; */
-    font-weight: 700;
+.sign-out-form {
+    position: relative;
+    left: 45em;
 }
 
-// .sign-in-form {
-    
-// }
-
-// safely set elements inside to absolute
-// fieldset {
-//     position: relative;
-// }
-
-// legend {
-//     float: left;
-// }
-
-// legend span {
-//     position: absolute;
-//     top: 0;
-//     left: 0;
-// }
-
-// input[type=text] {
-//     width: 50%;
-//     padding: 12px 20px;
-//     margin: 8px 0;
-//     // box-sizing: border-box;
-//   }
-
-// input[type=submit] {
-//     font-weight: 700;
-// }
-
-// .sign-out {
-//     position: relative;
-//     left: 50em;
-// }
-
-// .change-password {
-//     position: relative;
-//     // left: 20em;
-//     bottom: 10em;
-//     font-size: .75em;
-//     text-align: right;
-// }
+.change-password-form {
+    position: relative;
+    bottom: 1.8em;
+    left: 25em;
+    font-size: 1em;
+}
