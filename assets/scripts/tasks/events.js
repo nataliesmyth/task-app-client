@@ -54,7 +54,7 @@ const onDeleteTask = function (event) {
       .catch(ui.onDestroyFailure)
   } else {
     $('#message').html('<p>Please provide a task id!</p>')
-    // $('#message').css('background-color', 'red')
+    $('#message').css('background-color', 'red')
     // console.log('Please provide a task id!')
   }
 }
