@@ -6,17 +6,11 @@
     --text: rgb(105, 105, 105);
 }
 
-$timing-function: ease-in-out;
-$duration: 1s;
-$delayRatio: 0.075s;
-$bounceLimitKeyframe: 30%;
-$bounceLimit: 50%;
-
-h1 {
-  font-size: 48px;
-  color: #927963;
-  position: relative;
-}
+// $timing-function: ease-in-out;
+// $duration: 1s;
+// $delayRatio: 0.075s;
+// $bounceLimitKeyframe: 30%;
+// $bounceLimit: 50%;
 
 body {
     margin: 2em auto;
@@ -26,10 +20,10 @@ body {
     background-color: var(--background);
     color: var(--text);
 }
-
-.sign-out-form {
-    position: relative;
-    left: 45em;
+h1 {
+  font-size: 48px;
+  color: #927963;
+  position: relative;
 }
 
 .change-password-form {
@@ -37,4 +31,14 @@ body {
     bottom: 1.8em;
     left: 25em;
     font-size: 1em;
+    display: inline;
+}
+
+.sign-out-form {
+    position: relative;
+    left: 45em;
+}
+
+.task-id {
+    padding-bottom: 5px;
 }

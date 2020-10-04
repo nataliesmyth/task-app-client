@@ -17,16 +17,16 @@ const onCreateFailure = function (error) {
 }
 
 const onIndexSuccess = function (data) {
-  console.log('onIndexSuccess ran. Data is :', data.tasks)
+  // console.log('onIndexSuccess ran. Data is :', data.tasks)
 // loop through tasks w/ forEach loop
 $('#task-list').empty()
 data.tasks.forEach((task) => {
   
-  console.log('To Do: ', task)
+  // console.log('To Do: ', task)
   // append elements to show task item
   $('#task-list').append(`
-    <div id="${task._id}">
-    <p>${task.text}</p>
+    <p>task: ${task.text}</p>
+    <p class="task-id">ID: ${task._id}</p>
     </div>
   `)
 })
@@ -69,7 +69,7 @@ const onDestroyFailure = function (error) {
   $('#message').removeClass()
   $('#message').addClass('failure')
   $('#task-delete').trigger('reset')
-  console.error('onDestroyFailure ran. Error is :', error)
+  // console.error('onDestroyFailure ran. Error is :', error)
 }
 
 const onUpdateSuccess = function () {
