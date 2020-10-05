@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>Task App</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <!-- Do not add `link` tags-->
+      <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+      <!-- Do not add `script` tags-->
+      <script src="public/vendor.js" type="text/javascript" charset="utf-8" defer></script>
+      <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
+    </head>
+    <body>
+      <form class="sign-out-form" id="sign-out">
+        <fieldset>
+          <!-- <legend>Sign Out</legend> -->
+          <input type="submit" value="Sign out">
+        </fieldset>
+      </form>
+  
+      <form class="change-password-form" id="change-password">
+          <!-- <h3>Change Password</h3> -->
+          <input type="password" name="passwords[old]" placeholder="Old Password">
+          <input type="password" name="passwords[new]" placeholder="New Password">
+          <input type="submit" value="Change Password">
+      </form>
+
+      <h1>Task App</h1>
+      <p id="message"></p>
+
+      <form id="sign-up">
+          <legend>Sign up</legend>
+          <input type="text" name="credentials[email]" placeholder="Email">
+          <input type="password" name="credentials[password]" placeholder="Password">
+          <input type="password" name="credentials[password_confirmation]" placeholder="Confirm Password">
+          <input type="submit" value="Sign up">
+      </form>
+    
+      <form class="sign-in-form" id="sign-in">
+          <legend>Sign in</legend>
+          <input type="text" name="credentials[email]" placeholder="Email">
+          <input type="password" name="credentials[password]" placeholder="Password">
+          <input type="submit" value="Sign in">
+      </form>
+
+      <form id="task-create" class="border">
+        <fieldset>
+          <legend>Create Task</legend>
+          <input type="text" name="task[text]" placeholder="Enter Task">
+          <input type="submit" value="Create Task">
+        </fieldset>
+      </form>
+    
+      <form id="task-index" class="border">
+        <fieldset>
+          <legend>Get All Tasks</legend>
+          <input type="submit" value="Get All Tasks">
+        </fieldset>
+      </form>
+
+      <!-- Task List -->
+      <div id="task-list"></div>
+    
+      <!-- <form id="task-show" class="border">
+        <fieldset>
+          <legend>Get One Task</legend>
+          <input type="text" name="task[id]" placeholder="Enter Task ID">
+          <input type="submit">
+        </fieldset>
+      </form> -->
+    
+      <form id="task-delete" class="border">
+        <fieldset>
+          <legend>Delete One Task</legend>
+          <input type="text" name="task[id]" placeholder="Enter Task ID">
+          <input type="submit" value="Delete Task">
+        </fieldset>
+      </form>
+    
+      <form id="task-update" class="border">
+        <fieldset>
+          <legend>Update One Task</legend>
+          <input type="text" name="task[id]" placeholder="Enter Task ID">
+          <input type="text" name="task[text]" placeholder="Enter New Text">
+          <input type="submit" value="Update Task">
+        </fieldset>
+      </form>
+    </body>
+    
+    </html>
