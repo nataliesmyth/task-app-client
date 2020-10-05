@@ -5,9 +5,9 @@ This application allows the user to do x, y, and z. Maybe here's a reason why I 
 
 ## Important Links
 
-Deployed backend: <https://cryptic-harbor-00209.herokuapp.com/>
-Deployed front end: <https://nataliesmyth.github.io/task-app-client/>
-Back-end repository: <https://github.com/nataliesmyth/task-app>
+* Deployed backend: <https://cryptic-harbor-00209.herokuapp.com/>
+* Deployed front end: <https://nataliesmyth.github.io/task-app-client/>
+* Back-end repository: <https://github.com/nataliesmyth/task-app>
 
 ## Planning Story
 
@@ -22,13 +22,10 @@ Back-end repository: <https://github.com/nataliesmyth/task-app>
 
 ### Technologies Used
 
-1. Express.js
-1. MongoDB
-1. Mongoose
-1. Java Script
+1. jQuery
+1. Javascript
+1. HTML/CSS
 1. Bootstrap
-1. CSS
-1. HTML
 
 ### Unsolved Problems
 
