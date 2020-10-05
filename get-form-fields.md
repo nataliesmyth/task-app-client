@@ -48,7 +48,7 @@ $('#create-book').on('submit', function (event) {
 
   const form = event.target
   const bookData = getFormFields(form)
-  console.log(bookData) // returned JavaScript object
+  // console.log(bookData) // returned JavaScript object
 })
 ```
 
