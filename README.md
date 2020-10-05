@@ -22,10 +22,10 @@ This application allows the user to do x, y, and z. Maybe here's a reason why I 
 
 ### Technologies Used
 
-1. jQuery
-1. Javascript
-1. HTML/CSS
-1. Bootstrap
+* jQuery
+* Javascript
+* HTML/CSS
+* Bootstrap
 
 ### Unsolved Problems
 
