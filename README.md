@@ -1,15 +1,14 @@
 # Task App
 
 A productivity application to keep track of tasks you need to get done.
-This application allows the user to do x, y, and z. Maybe here's a reason why I wanted to do this project, or came up with this idea.
+This application allows the user to do create, edit, and delete tasks they need to get done.
 
 ## Important Links
 
 * Deployed backend: <https://cryptic-harbor-00209.herokuapp.com/>
 * Deployed front end: <https://nataliesmyth.github.io/task-app-client/>
 * Back-end repository: <https://github.com/nataliesmyth/task-app>
-
-## Planning Story
+* Wireframes: <https://imgur.com/Vl70Sq7>
 
 ### User Stories
 
