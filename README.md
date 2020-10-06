@@ -1,13 +1,13 @@
-# Task App
+# BETTR
 
 A productivity application to keep track of tasks you need to get done.
-This application allows the user to do create, edit, and delete tasks they need to get done.
+This application allows the user to create, view, edit, and delete tasks from their own to-do list.
 
 ## Important Links
 
-* Deployed backend: <https://cryptic-harbor-00209.herokuapp.com/>
-* Deployed front end: <https://nataliesmyth.github.io/task-app-client/>
-* Back-end repository: <https://github.com/nataliesmyth/task-app>
+* Deployed API: <https://cryptic-harbor-00209.herokuapp.com/>
+* Deployed Client: <https://nataliesmyth.github.io/task-app-client/>
+* API repository: <https://github.com/nataliesmyth/task-app>
 * Wireframes: <https://imgur.com/Vl70Sq7>
 
 ### User Stories
