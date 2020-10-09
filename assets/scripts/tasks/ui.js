@@ -15,8 +15,12 @@ const onCreateFailure = function (error) {
 }
 
 const onIndexSuccess = function (data) {
-$('#task-list').empty()
-data.tasks.forEach((task) => {
+  $('#message').text('All tasks successfully received')
+  $('#message').removeClass()
+  $('#message').addClass('success')
+  $('#task-show').trigger('reset')
+  $('#task-list').empty()
+  data.tasks.forEach((task) => {
   
   $('#task-list').append(`
     <p>task: ${task.text}</p>
