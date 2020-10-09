@@ -30,7 +30,6 @@ const signInSuccess = function (data) {
   $('#task-delete').show()
   $('#task-update').show()
   $('#task-show').show()
-  // $('#task-list').show()
   store.user = data.user
 }
 
