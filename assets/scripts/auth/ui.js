@@ -54,7 +54,6 @@ const signOutSuccess = function () {
   $('#task-create').hide()
   $('#task-index').trigger('reset')
   $('#task-index').hide()
-  // $('#task-list').hide()
   $('#task-delete').hide()
   $('#task-update').hide()
   $('#task-show').hide()
@@ -71,14 +70,14 @@ const changePasswordSuccess = function () {
   $('#message').text('Changed password successfully')
   $('#message').removeClass()
   $('#message').addClass('success')
-  $('#form').trigger('reset')
+  $('#change-password').trigger('reset')
 }
 
 const changePasswordFailure = function (error) {
   $('#message').text('Error on change password')
   $('#message').removeClass()
   $('#message').addClass('failure')
-  $('#form').trigger('reset')
+  $('#change-password').trigger('reset')
 }
 
 module.exports = {
