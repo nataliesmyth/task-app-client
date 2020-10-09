@@ -20,6 +20,7 @@ const signInSuccess = function (data) {
   $('#message').text('Signed in successfully')
   $('#message').removeClass()
   $('#message').addClass('success')
+  $('#sign-in').trigger('reset')
   $('#sign-up').hide()
   $('#sign-in').hide()
   $('#sign-out').show()
@@ -29,6 +30,7 @@ const signInSuccess = function (data) {
   $('#task-delete').show()
   $('#task-update').show()
   $('#task-show').show()
+  // $('#task-list').show()
   store.user = data.user
 }
 
@@ -44,6 +46,7 @@ const signOutSuccess = function () {
   $('#message').removeClass()
   $('#message').addClass('success')
   $('#form').trigger('reset')
+  $('#task-show').trigger('reset')
   $('#sign-up').show()
   $('#sign-in').show()
   $('#sign-out').hide()
@@ -51,6 +54,7 @@ const signOutSuccess = function () {
   $('#task-create').hide()
   $('#task-index').trigger('reset')
   $('#task-index').hide()
+  // $('#task-list').hide()
   $('#task-delete').hide()
   $('#task-update').hide()
   $('#task-show').hide()
