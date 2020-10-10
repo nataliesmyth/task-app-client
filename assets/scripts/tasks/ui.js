@@ -18,7 +18,7 @@ const onIndexSuccess = function (data) {
   $('#message').text('All tasks successfully received')
   $('#message').removeClass()
   $('#message').addClass('success')
-  $('#task-show').trigger('reset')
+  $('#task-list').trigger('reset')
   $('#task-list').empty()
   data.tasks.forEach((task) => {
   
@@ -42,6 +42,14 @@ const onShowSuccess = function (data) {
   $('#message').removeClass()
   $('#message').addClass('success')
   $('#task-show').trigger('reset')
+  // data.tasks.for((task) => {
+  
+  //   $('#one-task').append(`
+  //     <p>task: ${task.text}</p>
+  //     <p class="task-id">ID: ${task._id}</p>
+  //     </div>
+  //   `)
+  // })
 }
 
 const onShowFailure = function (error) {
