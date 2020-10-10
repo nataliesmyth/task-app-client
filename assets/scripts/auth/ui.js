@@ -3,23 +3,25 @@
 const store = require('../store')
 
 const signUpSuccess = function (data) {
-  $('#message').text('Signed up successfully')
-  $('#message').removeClass()
-  $('#message').addClass('success')
+  $('#sign-up-message').text('Signed up successfully')
+  $('#sign-up-message').removeClass()
+  $('#sign-up-message').addClass('success')
   $('#sign-up').trigger('reset')
 }
 
 const signUpFailure = function (error) {
-  $('#message').text('Error on sign up')
-  $('#message').removeClass()
-  $('#message').addClass('failure')
+  $('#sign-up-message').text('Error on sign up')
+  $('#sign-up-message').removeClass()
+  $('#sign-up-message').addClass('failure')
   $('#sign-up').trigger('reset')
 }
 
 const signInSuccess = function (data) {
-  $('#message').text('Signed in successfully')
-  $('#message').removeClass()
-  $('#message').addClass('success')
+  $('#sign-in-message').text('Signed in successfully')
+  $('#sign-in-message').removeClass()
+  $('#sign-in-message').addClass('success')
+  $('#sign-out-message').empty()
+  $('#sign-up-message').empty()
   $('#sign-in').trigger('reset')
   $('#sign-up').hide()
   $('#sign-in').hide()
@@ -34,17 +36,26 @@ const signInSuccess = function (data) {
 }
 
 const signInFailure = function (error) {
-  $('#message').text('Error on sign in')
-  $('#message').removeClass()
-  $('#message').addClass('failure')
+  $('#sign-in-message').text('Error on sign in')
+  $('#sign-in-message').removeClass()
+  $('#sign-in-message').addClass('failure')
   $('#sign-in').trigger('reset')
+  $('#sign-up-message').empty()
+  $('#sign-in-message').empty()
 }
 
 const signOutSuccess = function () {
-  $('#message').text('Signed out successfully')
-  $('#message').removeClass()
-  $('#message').addClass('success')
-  $('#form').trigger('reset')
+  $('#sign-out-message').text('Signed out successfully')
+  $('#sign-out-message').removeClass()
+  $('#sign-out-message').addClass('success')
+  $('#sign-in-message').empty()
+  $('#change-password-message').empty()
+  $('#text-index-message').empty()
+  $('#text-create-message').empty()
+  $('#text-show-message').empty()
+  $('#text-update-message').empty()
+  $('#text-delete-message').empty()
+  $('#sign-in').trigger('reset')
   $('#task-show').trigger('reset')
   $('#sign-up').show()
   $('#sign-in').show()
@@ -60,23 +71,43 @@ const signOutSuccess = function () {
 }
 
 const signOutFailure = function (error) {
-  $('#message').text('Error on sign out')
-  $('#message').removeClass()
-  $('#message').addClass('failure')
+  $('#sign-out-message').text('Error on sign out')
+  $('#sign-out-message').removeClass()
+  $('#sign-out-message').addClass('failure')
+  $('#sign-in-message').empty()
+  $('#change-password-message').empty()
+  $('#sign-up-message').empty()
+  $('#text-index-message').empty()
+  $('#text-create-message').empty()
+  $('#text-show-message').empty()
+  $('#text-update-message').empty()
+  $('#text-delete-message').empty()
 }
 
 const changePasswordSuccess = function () {
-  $('#message').text('Changed password successfully')
-  $('#message').removeClass()
-  $('#message').addClass('success')
+  $('#change-password-message').text('Changed password successfully')
+  $('#change-password-message').removeClass()
+  $('#change-password-message').addClass('success')
   $('#change-password').trigger('reset')
+  $('#sign-in-message').empty()
+  $('#text-index-message').empty()
+  $('#text-create-message').empty()
+  $('#text-show-message').empty()
+  $('#text-update-message').empty()
+  $('#text-delete-message').empty()
 }
 
 const changePasswordFailure = function (error) {
-  $('#message').text('Error on change password')
-  $('#message').removeClass()
-  $('#message').addClass('failure')
+  $('#change-password-message').text('Error on change password')
+  $('#change-password-message').removeClass()
+  $('#change-password-message').addClass('failure')
   $('#change-password').trigger('reset')
+  $('#sign-in-message').empty()
+  $('#text-index-message').empty()
+  $('#text-create-message').empty()
+  $('#text-show-message').empty()
+  $('#text-update-message').empty()
+  $('#text-delete-message').empty()
 }
 
 module.exports = {

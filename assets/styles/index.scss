@@ -10,13 +10,13 @@ body {
     margin: 2em auto;
     font-size: 16px;
     text-align: center;
-    font-family: sans-serif;
+    font-family: 'Space Mono', monospace;
     background-color: var(--background);
     color: var(--text);
 }
 h1 {
   font-size: 48px;
-  color: #927963;
+//   color: #927963;
   position: relative;
 }
 
@@ -30,7 +30,7 @@ h1 {
 
 .sign-out-form {
     position: relative;
-    left: 45em;
+    // left: 45em;
 }
 
 .task-id {

@@ -32,8 +32,8 @@ const onShowTask = function (event) {
       .then(ui.onShowSuccess)
       .catch(ui.onShowFailure)
   } else {
-    $('#message').html('<p>Please provide a task id!</p>')
-    $('#message').css('background-color', 'red')
+    $('#task-show-message').html('<p>Please provide a task id!</p>')
+    $('#task-show-message').css('background-color', 'red')
   }
 }
 
@@ -48,8 +48,8 @@ const onDeleteTask = function (event) {
       .then(ui.onDestroySuccess)
       .catch(ui.onDestroyFailure)
   } else {
-    $('#message').html('<p>Please provide a task id!</p>')
-    $('#message').css('background-color', 'red')
+    $('#task-delete-message').html('<p>Please provide a task id!</p>')
+    $('#task-delete-message').css('background-color', 'red')
   }
 }
 
@@ -60,8 +60,8 @@ const onUpdateTask = function (event) {
   const task = data.task
 
   if (task.text === '') {
-    $('#message').html('<p>Text is required</p>')
-    $('#message').css('background-color', 'red')
+    $('#task-update-message').html('<p>Text is required</p>')
+    $('#task-update-message').css('background-color', 'red')
     return false
   }
   if (task.id.length !== 0) {
@@ -69,8 +69,8 @@ const onUpdateTask = function (event) {
       .then(ui.onUpdateSuccess)
       .catch(ui.onUpdateFailure)
   } else {
-    $('#message').html('<p>Please provide an task id!</p>')
-    $('#message').css('background-color', 'red')
+    $('#task-update-message').html('<p>Please provide an task id!</p>')
+    $('#task-update-message').css('background-color', 'red')
   }
 }
 
