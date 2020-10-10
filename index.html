@@ -48,6 +48,8 @@
         <fieldset>
           <legend>Create Task</legend>
           <input type="text" name="task[text]" placeholder="Enter Task">
+          <input type="checkbox" name="task[priority]" id="task-priority" value="high priority">
+  <label for="task-priority"> high priority</label>
           <input type="submit" value="Create Task">
         </fieldset>
       </form>
@@ -56,27 +58,25 @@
         <fieldset>
           <legend>Get All Tasks</legend>
           <input type="submit" value="Get All Tasks">
+          <!-- Task List -->
           <div id="task-list"></div>
         </fieldset>
       </form>
 
-      <!-- Task List -->
-      
-    
       <form id="task-show" class="border">
         <fieldset>
           <legend>Get One Task</legend>
           <input type="text" name="task[id]" placeholder="Enter Task ID">
           <input type="submit">
+          <!-- One Task -->
+          <div id="one-task"></div>
         </fieldset>
       </form>
     
       <form id="task-delete" class="border">
-        <fieldset>
           <legend>Delete One Task</legend>
           <input type="text" name="task[id]" placeholder="Enter Task ID">
           <input type="submit" value="Delete Task">
-        </fieldset>
       </form>
     
       <form id="task-update" class="border">
