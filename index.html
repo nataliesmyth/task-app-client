@@ -15,22 +15,19 @@
     </head>
     <body>
       <header>
+        <h1>Bettr.</h1>
         <nav>
-          <form class="sign-out-form" id="sign-out">
-            <!-- <fieldset> -->
-              <!-- <legend>Sign Out</legend> -->
-              <input type="submit" value="Sign out">
-            <!-- </fieldset> -->
-          </form>
           <form class="change-password-form" id="change-password">
             <!-- <h3>Change Password</h3> -->
-            <input type="password" name="passwords[old]" placeholder="Old   Password">
-            <input type="password" name="passwords[new]" placeholder="New   Password">
+            <input type="password" name="passwords[old]" placeholder="Old Password">
+            <input type="password" name="passwords[new]" placeholder="New Password">
             <input type="submit" value="Change Password">
+          </form>
+          <form class="sign-out-form" id="sign-out">
+              <input type="submit" value="Sign out">
           </form>
         </nav>
           
-        <h1>Bettr.</h1>
       </header>
       <!-- <h2>because you're better than them</h2> -->
       <p id="change-password-message"></p>
@@ -52,46 +49,40 @@
         <input type="password" name="credentials[password]" placeholder="Password">
         <input type="submit" value="Sign in">
       </form>
-      
-      <form id="task-create" class="border">
-        <p id="task-create-message"></p>
-        <fieldset>
-          <legend>Create Task</legend>
-          <input type="text" name="task[text]" placeholder="Enter Task">
-          <input type="checkbox" name="task[priority]" id="task-priority" value="high priority">
-          <label for="task-priority"> high priority</label>
-          <input type="submit" value="Create Task">
-        </fieldset>
-      </form>
-      
-      <form id="task-index" class="border">
-        <p id="task-index-message"></p>
-        <fieldset>
-          <legend>Get All Tasks</legend>
-          <input type="submit" value="Get All Tasks">
-          <!-- Task List -->
-          <div id="task-list">
-            <form id="task-delete" class="border">
-              <legend>Delete One Task</legend>
-              <input type="text" name="task[id]" placeholder="Enter Task ID">
-              <input type="submit" value="Delete Task">
-            </form>
-          </div>
-        </fieldset>
-      </form>
+      <div class="form-group">
+        <form id="task-create" class="border">
+          <p id="task-create-message"></p>
+          <fieldset>
+            <!-- <legend>Add Item</legend> -->
+            <input type="text" name="task[text]"  placeholder="New item">
+            <!-- <input type="checkbox" name="task[priority]  " id="task-priority" value="high priority"> -->
+            <!-- <label for="task-priority"> high priority</  label> -->
+            <input type="submit" value="Create">
+          </fieldset>
+        </form>
+
+        <form id="task-index" class="border">
+          <p id="task-index-message"></p>
+          <fieldset>
+            <!-- <legend>Get All Tasks</legend> -->
+            <input type="submit" value="View List">
+            <!-- Task List -->
+            <div id="task-list">
+            </div>
+          </fieldset>
+        </form>
+      </div>
       
       <form id="task-show" class="border">
         <p id="task-show-message"></p>
         <fieldset>
-          <legend>Get One Task</legend>
+          <legend>Show One Task</legend>
           <input type="text" name="task[id]" placeholder="Enter Task ID">
           <input type="submit">
           <!-- One Task -->
           <div id="one-task"></div>
         </fieldset>
       </form>
-      
-      
       
       <form id="task-update" class="border">
         <fieldset>
@@ -102,6 +93,13 @@
           <input type="submit" value="Update Task">
         </fieldset>
       </form>
+
+      <form id="task-delete" class="border">
+        <legend>Delete Task</legend>
+        <input type="text" name="task[id]" placeholder="Enter Task ID">
+        <input type="submit" value="Delete Task">
+      </form>
+
     </body>
     
     </html>

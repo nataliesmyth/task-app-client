@@ -14,23 +14,28 @@ body {
     background-color: var(--background);
     color: var(--text);
 }
+
 h1 {
   font-size: 48px;
 //   color: #927963;
   position: relative;
 }
 
+nav {
+    display: inline;
+}
 .change-password-form {
-    position: relative;
-    bottom: 1.8em;
-    left: 25em;
-    font-size: 1em;
+    // position: relative;
+    // bottom: 1.8em;
+    // left: 25em;
+    // font-size: 1em;
     display: inline;
 }
 
 .sign-out-form {
-    position: relative;
+    // position: relative;
     // left: 45em;
+    display: inline;
 }
 
 .task-id {

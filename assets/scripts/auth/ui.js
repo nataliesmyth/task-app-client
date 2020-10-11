@@ -76,7 +76,7 @@ const signOutFailure = function (error) {
   $('#sign-out-message').addClass('failure')
   $('#sign-in-message').empty()
   $('#change-password-message').empty()
-  $('#sign-up-message').empty()
+  // $('#sign-up-message').empty()
   $('#text-index-message').empty()
   $('#text-create-message').empty()
   $('#text-show-message').empty()

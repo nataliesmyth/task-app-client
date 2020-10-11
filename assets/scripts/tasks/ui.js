@@ -10,6 +10,7 @@ const onCreateSuccess = function (data) {
   // $('#sign-up-message').empty()
   $('#sign-out-message').empty()
   $('#change-password-message').empty()
+  $('#task-list').show()
 }
 
 const onCreateFailure = function (error) {
@@ -27,6 +28,7 @@ const onIndexSuccess = function (data) {
   $('#task-index-message').addClass('success')
   $('#task-list').trigger('reset')
   $('#sign-in-message').empty()
+  $('#task-create-message').empty()
   // $('#sign-up-message').empty()
   // $('#sign-out-message').empty()
   $('#change-password-message').empty()
@@ -100,7 +102,7 @@ const onUpdateFailure = function (error) {
   $('#task-update-message').addClass('failure')
   $('#task-update').trigger('reset')
   $('#sign-in-message').empty()
-  // $('#sign-up-m essage').empty()
+  // $('#sign-up-message').empty()
   $('#sign-out-message').empty()
   $('#change-password-message').empty()
 }
