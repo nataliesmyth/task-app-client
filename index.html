@@ -15,7 +15,20 @@
     </head>
     <body>
       <header>
-        <h1>Bettr.</h1>
+        <!-- <h1>Bettr.</h1> -->
+        <nav class="navbar navbar-inverse">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <a class="navbar-brand" href="#">Bettr.</a>
+            </div>
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="#">Page 1</a></li>
+              <li><a href="#">Page 2</a></li>
+              <li><a href="#">Page 3</a></li>
+            </ul>
+          </div>
+        </nav>
         <nav>
           <form class="change-password-form" id="change-password">
             <!-- <h3>Change Password</h3> -->
@@ -49,29 +62,43 @@
         <input type="password" name="credentials[password]" placeholder="Password">
         <input type="submit" value="Sign in">
       </form>
-      <div class="form-group">
-        <form id="task-create" class="border">
-          <p id="task-create-message"></p>
-          <fieldset>
-            <!-- <legend>Add Item</legend> -->
-            <input type="text" name="task[text]"  placeholder="New item">
-            <!-- <input type="checkbox" name="task[priority]  " id="task-priority" value="high priority"> -->
-            <!-- <label for="task-priority"> high priority</  label> -->
-            <input type="submit" value="Create">
-          </fieldset>
-        </form>
 
-        <form id="task-index" class="border">
-          <p id="task-index-message"></p>
-          <fieldset>
-            <!-- <legend>Get All Tasks</legend> -->
+      <div class="container">
+        
+        <p id="task-create-message"></p>
+        <p id="task-index-message"></p>
+        <div class="form-group">
+          <form id="task-create" class="border">
+            <input type="text" name="task[text]"  placeholder="New item">
+            <input type="submit" value="Create">
+          </form>
+
+          <form id="task-index" class="border">
             <input type="submit" value="View List">
-            <!-- Task List -->
-            <div id="task-list">
-            </div>
-          </fieldset>
-        </form>
+            <div id="task-list"></div>
+          </form>
+        </div>
+        
       </div>
+
+      <form>
+        <div class="form-row">
+          <div class="form group">
+            <div class="col-7">
+              <input type="text" name="task[text]" class="form-control" placeholder="New Item">
+              <input type="submit" value="Create">
+            </div>
+          </div>
+          <div class="col">
+            <input type="text" class="form-control" placeholder="State">
+            <input type="submit" value="View List">
+            <div id="task-list"></div>
+          </div>
+          <div class="col">
+            <input type="text" class="form-control" placeholder="Zip">
+          </div>
+        </div>
+      </form>
       
       <form id="task-show" class="border">
         <p id="task-show-message"></p>
