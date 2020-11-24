@@ -21,12 +21,12 @@
             <div class="navbar-header">
               <a class="navbar-brand" href="#">Bettr.</a>
             </div>
-            <ul class="nav navbar-nav">
+            <!-- <ul class="nav navbar-nav">
               <li class="active"><a href="#">Home</a></li>
               <li><a href="#">Page 1</a></li>
               <li><a href="#">Page 2</a></li>
               <li><a href="#">Page 3</a></li>
-            </ul>
+            </ul> -->
           </div>
         </nav>
         <nav>
@@ -80,25 +80,6 @@
         </div>
         
       </div>
-
-      <form>
-        <div class="form-row">
-          <div class="form group">
-            <div class="col-7">
-              <input type="text" name="task[text]" class="form-control" placeholder="New Item">
-              <input type="submit" value="Create">
-            </div>
-          </div>
-          <div class="col">
-            <input type="text" class="form-control" placeholder="State">
-            <input type="submit" value="View List">
-            <div id="task-list"></div>
-          </div>
-          <div class="col">
-            <input type="text" class="form-control" placeholder="Zip">
-          </div>
-        </div>
-      </form>
       
       <form id="task-show" class="border">
         <p id="task-show-message"></p>
@@ -112,13 +93,11 @@
       </form>
       
       <form id="task-update" class="border">
-        <fieldset>
           <p id="task-update-message"></p>
           <legend>Update One Task</legend>
           <input type="text" name="task[id]" placeholder="Enter Task ID">
           <input type="text" name="task[text]" placeholder="Enter New Text">
-          <input type="submit" value="Update Task">
-        </fieldset>
+          <input type="submit" value="Edit Task">
       </form>
 
       <form id="task-delete" class="border">
