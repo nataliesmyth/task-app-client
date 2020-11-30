@@ -3,7 +3,7 @@
 const store = require('../store')
 
 const signUpSuccess = function (data) {
-  $('#sign-up-message').text('Signed up successfully')
+  $('#sign-up-message').text('Signed up c')
   $('#sign-up-message').removeClass()
   $('#sign-up-message').addClass('success')
   $('#sign-up').trigger('reset')

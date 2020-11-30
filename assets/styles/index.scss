@@ -7,9 +7,9 @@
 }
 
 body {
-    margin: 2em auto;
-    font-size: 16px;
-    text-align: center;
+    // margin: 2em auto;
+    // font-size: 16px;
+    // text-align: center;
     font-family: 'Space Mono', monospace;
     background-color: var(--background);
     color: var(--text);
@@ -18,26 +18,26 @@ body {
 h1 {
   font-size: 48px;
 //   color: #927963;
-  position: relative;
+//   position: relative;
 }
-
-nav {
-    display: inline;
-}
-.change-password-form {
+// 
+// nav {
+    // display: inline;
+// }
+// .change-password-form {
     // position: relative;
     // bottom: 1.8em;
     // left: 25em;
     // font-size: 1em;
-    display: inline;
-}
+    // display: inline;
+// }
 
-.sign-out-form {
+// .sign-out-form {
     // position: relative;
     // left: 45em;
-    display: inline;
-}
+    // display: inline;
+// }
 
-.task-id {
-    padding-bottom: 5px;
-}
+// .task-id {
+    // padding-bottom: 5px;
+// }
