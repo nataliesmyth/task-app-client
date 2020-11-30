@@ -27,24 +27,21 @@
               <li><a href="#">Page 2</a></li>
               <li><a href="#">Page 3</a></li>
             </ul> -->
+            <form class="change-password-form" id="change-password">
+              <p id="change-password-message"></p>
+              <!-- <h3>Change Password</h3> -->
+              <input type="password" name="passwords[old]" placeholder="Old Password">
+              <input type="password" name="passwords[new]" placeholder="New Password">
+              <input type="submit" value="Change Password">
+            </form>
+            <form class="sign-out-form" id="sign-out">
+              <p id="sign-out-message"></p>
+              <input type="submit" value="Sign out">
+            </form>
           </div>
         </nav>
-        <nav>
-          <form class="change-password-form" id="change-password">
-            <!-- <h3>Change Password</h3> -->
-            <input type="password" name="passwords[old]" placeholder="Old Password">
-            <input type="password" name="passwords[new]" placeholder="New Password">
-            <input type="submit" value="Change Password">
-          </form>
-          <form class="sign-out-form" id="sign-out">
-              <input type="submit" value="Sign out">
-          </form>
-        </nav>
-          
       </header>
       <!-- <h2>because you're better than them</h2> -->
-      <p id="change-password-message"></p>
-      <p id="sign-out-message"></p>
       
       <form id="sign-up">
         <p id="sign-up-message"></p>
@@ -79,33 +76,32 @@
           </form>
         </div>
         
-      </div>
-      
-      <form id="task-show" class="border">
-        <p id="task-show-message"></p>
-        <fieldset>
-          <legend>Show One Task</legend>
-          <input type="text" name="task[id]" placeholder="Enter Task ID">
-          <input type="submit">
-          <!-- One Task -->
-          <div id="one-task"></div>
-        </fieldset>
-      </form>
-      
-      <form id="task-update" class="border">
+        
+        <form id="task-show" class="border">
+          <p id="task-show-message"></p>
+          <fieldset>
+            <legend>Show One Task</legend>
+            <input type="text" name="task[id]" placeholder="Enter Task ID">
+            <input type="submit">
+            <!-- One Task -->
+            <div id="one-task"></div>
+          </fieldset>
+        </form>
+        
+        <form id="task-update" class="border">
           <p id="task-update-message"></p>
           <legend>Update One Task</legend>
           <input type="text" name="task[id]" placeholder="Enter Task ID">
           <input type="text" name="task[text]" placeholder="Enter New Text">
           <input type="submit" value="Edit Task">
-      </form>
-
-      <form id="task-delete" class="border">
-        <legend>Delete Task</legend>
-        <input type="text" name="task[id]" placeholder="Enter Task ID">
-        <input type="submit" value="Delete Task">
-      </form>
+        </form>
+        
+        <form id="task-delete" class="border">
+          <legend>Delete Task</legend>
+          <input type="text" name="task[id]" placeholder="Enter Task ID">
+          <input type="submit" value="Delete Task">
+        </form>
+      </div>
 
     </body>
-    
     </html>
